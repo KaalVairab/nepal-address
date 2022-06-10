@@ -1,5 +1,5 @@
-{
-    "province": {
+[
+   { "province": {
         "Bagmati": [
             "Sindhuli",
             "Ramechhap",
@@ -90,5 +90,5 @@
             "Dailekh",
             "Jajarkot"
         ]
-    }
-}
+    }}
+]
