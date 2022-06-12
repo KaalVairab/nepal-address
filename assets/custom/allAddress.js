@@ -1,27 +1,21 @@
-
-
-let provinces
 window.addEventListener('load', (event) => {
 
-
     let options = document.getElementById("select2_input")
+    axios.get('../../data/all-address.json')
+        .then(rspnse => {
 
-let html = `<option value="sfjnvjnf">dskncjhgvjhukgyjkhgvfy</option>`;
-// options.insertAdjacentHTML("afterend", html);
+            let data = rspnse.data.province
 
-    axios.get('../../data/province.json').then(rspnse=>{
-        console.log(rspnse.data.province)
+            let listProvince = Object.keys(data)
+            console.log(listProvince)
 
-        console.log(options.innerText)
-        rspnse.data.province.map(data=>{
-           
-             let html=    `<option value=${data}> ${data} </option>`
+            listProvince.map(data => {
 
-             options.insertAdjacentHTML("afterend", html);
-
+                let html = `<option value=${data}> ${data} </option>`
+                options.insertAdjacentHTML("afterend", html);
+            })
         })
-    })
-  });
+});
 
 // Define form element
 const form = document.getElementById('kt_docs_formvalidation_select2');
@@ -76,22 +70,55 @@ submitButton.addEventListener('click', function (e) {
                 // Disable button to avoid multiple click
                 submitButton.disabled = true;
 
-                let province ="Bagmati"
+                let province = document.getElementById('get_districts_by_province_select').value
 
-                axios.get('../../data/all-address.json').then(rspnse=>{
-                    console.log(rspnse)
+                let axiosReturnData
+                axios.get('../../data/all-address.json')
+                    .then(rspnse => {
 
-                    console.log(rspnse.data.some(`${province}`))
-            
-                    // console.log(options.innerText)
-                    // rspnse.data.province.map(data=>{
-                       
-                    //      let html=    `<option value=${data}> ${data} </option>`
-            
-                    //      options.insertAdjacentHTML("afterend", html);
-            
-                    // })
-                })
+                        axiosReturnData = rspnse
+
+
+                    }).catch(err => {
+                        axiosReturnData = err.response
+                    }).then(() => {
+
+                        // Remove loading indication
+                        submitButton.removeAttribute('data-kt-indicator');
+
+                        // Enable button
+                        submitButton.disabled = false;
+
+                        console.log(axiosReturnData)
+                        if (axiosReturnData.status == "200") {
+                                    
+
+                            document.getElementById('result_container').classList.remove('d-none')
+
+
+                            let result = document.getElementById('result')
+
+                            let data = Object.entries(axiosReturnData.data.province)
+
+
+                            for (let i = 0; i < data.length; i++) {
+                                if
+                                    (data[i].find(d => d == province)) {
+                                    console.log(data[i][1])
+
+                                    result.innerHTML = JSON.stringify(data[i][1], null, 2)
+                                }
+
+
+
+                            }
+                        } else if (axiosReturnData.status != 200) {
+                            Swal.fire({
+                                text: axiosReturnData.statusText,
+                                icon: "error"
+                            })
+                        }
+                    })
 
                 // Simulate form submission. For more info check the plugin's official documentation: https://sweetalert2.github.io/
                 // setTimeout(function () {
@@ -118,6 +145,16 @@ submitButton.addEventListener('click', function (e) {
         });
     }
 });
+
+
+
+const copyData = (id) => {
+    console.log(id)
+
+    // let data = document.getElementById(id).innerText
+
+    // console.log(data)
+}
 
 
 
