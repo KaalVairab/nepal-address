@@ -1,17 +1,175 @@
 {
-    "districts": [
-        "Sindhuli",
-        "Ramechhap",
-        "Dolakha",
-        "Bhaktapur",
-        "Dhading",
-        "Kathmandu",
-        "Kavrepalanchok",
-        "Lalitpur",
-        "Nuwakot",
-        "Rasuwa",
-        "Sindhupalchok",
-        "Chitwan",
-        "Makwanpur"
+    "Bagmati": [
+        {
+            "Sindhuli": [
+                "Marin Rural Municipality",
+                "Phikkal Rural Municipality",
+                "Tinpatan Rural Municipality",
+                "Sunkoshi Rural Municipality",
+                "Golanjor Rural Municipality",
+                "Ghanglekh Rural Municipality",
+                "Hariharpurgadhi Rural Municipality",
+                "Dudhouli Municipality",
+                "Kamalamai Municipality"
+            ]
+        },
+        {
+            "Ramechhap": [
+                "Sunapati Rural Municipality",
+                "Doramba Rural Municipality",
+                "Umakunda Rural Municipality",
+                "Khadadevi Rural Municipality",
+                "Gokulganga Rural Municipality",
+                "Likhu Tamakoshi Rural Municipality",
+                "Manthali Municipality",
+                "Ramechhap Municipality"
+            ]
+        },
+        {
+            "Dolakha": [
+                "Bigu Rural Municipality",
+                "Sailung Rural Municipality",
+                "Melung Rural Municipality",
+                "Baiteshwor Rural Municipality",
+                "Tamakoshi Rural Municipality",
+                "Gaurishankar Rural Municipality",
+                "Kalinchok Rural Municipality",
+                "Jiri Municipality",
+                "Bhimeshwor Municipality"
+            ]
+        },
+        {
+            "Bhaktapur": [
+                "Changunarayan Municipality",
+                "Suryabinayak Municipality",
+                "Bhaktapur Municipality",
+                "Madhyapur Thimi Municipality"
+            ]
+        },
+        {
+            "Dhading": [
+                "Gajuri Rural Municipality",
+                "Galchi Rural Municipality",
+                "Thakre Rural Municipality",
+                "Siddhalek Rural Municipality",
+                "Khaniyabash Rural Municipality",
+                "Jwalamukhi Rural Municipality",
+                "Gangajamuna Rural Municipality",
+                "Rubi Valley Rural Municipality",
+                "Tripura Sundari Rural Municipality",
+                "Netrawati Dabjong Rural Municipality",
+                "Benighat Rorang Rural Municipality",
+                "Nilakantha Municipality",
+                "Dhunibesi Municipality"
+            ]
+        },
+        {
+            "Kathmandu": [
+                "Kirtipur Municipality",
+                "Shankharapur Municipality",
+                "Nagarjun Municipality",
+                "Kageshwori Manahora Municipality",
+                "Dakshinkali Municipality",
+                "Budhanilakantha Municipality",
+                "Tarakeshwor Municipality",
+                "Kathmandu Metropolitian City",
+                "Tokha Municipality",
+                "Chandragiri Municipality",
+                "Gokarneshwor Municipality"
+            ]
+        },
+        {
+            "Kavrepalanchok": [
+                "Roshi Rural Municipality",
+                "Temal Rural Municipality",
+                "Bhumlu Rural Municipality",
+                "Mahabharat Rural Municipality",
+                "Bethanchowk Rural Municipality",
+                "Khanikhola Rural Municipality",
+                "Chaurideurali Rural Municipality",
+                "Banepa Municipality",
+                "Mandandeupur Municipality",
+                "Dhulikhel Municipality",
+                "Panauti Municipality",
+                "Namobuddha Municipality",
+                "Panchkhal Municipality"
+            ]
+        },
+        {
+            "Lalitpur": [
+                "Bagmati Rural Municipality",
+                "Mahankal Rural Municipality",
+                "Konjyosom Rural Municipality",
+                "Lalitpur Metropolitian City",
+                "Mahalaxmi Municipality",
+                "Godawari Municipality"
+            ]
+        },
+        {
+            "Nuwakot": [
+                "Kakani Rural Municipality",
+                "Tadi Rural Municipality",
+                "Likhu Rural Municipality",
+                "Myagang Rural Municipality",
+                "Shivapuri Rural Municipality",
+                "Kispang Rural Municipality",
+                "Suryagadhi Rural Municipality",
+                "Tarkeshwar Rural Municipality",
+                "Panchakanya Rural Municipality",
+                "Dupcheshwar Rural Municipality",
+                "Belkotgadhi Municipality",
+                "Bidur Municipality"
+            ]
+        },
+        {
+            "Rasuwa": [
+                "Kalika Rural Municipality",
+                "Naukunda Rural Municipality",
+                "Uttargaya Rural Municipality",
+                "Gosaikunda Rural Municipality",
+                "Amachodingmo Rural Municipality"
+            ]
+        },
+        {
+            "Sindhupalchok": [
+                "Jugal Rural Municipality",
+                "Balefi Rural Municipality",
+                "Sunkoshi Rural Municipality",
+                "Helambu Rural Municipality",
+                "Bhotekoshi Rural Municipality",
+                "Lisangkhu Pakhar Rural Municipality",
+                "Indrawati Rural Municipality",
+                "Tripurasundari Rural Municipality",
+                "Panchpokhari Thangpal Rural Municipality",
+                "Chautara SangachokGadhi Municipality",
+                "Barhabise Municipality",
+                "Melamchi Municipality"
+            ]
+        },
+        {
+            "Chitwan": [
+                "Ichchhyakamana Rural Municipality",
+                "Bharatpur Metropolitian City",
+                "Kalika Municipality",
+                "Khairahani Municipality",
+                "Madi Municipality",
+                "Rapti Municipality",
+                "Ratnanagar Municipality"
+            ]
+        },
+        {
+            "Makwanpur": [
+                "Bakaiya Rural Municipality",
+                "Kailash Rural Municipality",
+                "Manahari Rural Municipality",
+                "Bhimphedi Rural Municipality",
+                "Bagmati Rural Municipality",
+                "Raksirang Rural Municipality",
+                "Makawanpurgadhi Rural Municipality",
+                "Indrasarowar Rural Municipality",
+                "Hetauda Sub-Metropolitian City",
+                "Thaha Municipality"
+            ]
+        }
     ]
 }

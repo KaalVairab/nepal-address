@@ -28,6 +28,7 @@
 	<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 	<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 	<!--end::Global Stylesheets Bundle-->
+
 	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 </head>
@@ -289,7 +290,8 @@
 						<div class="card card-docs mb-2">
 							<!--begin::Card Body-->
 							<div class="card-body fs-6 py-15 px-10 py-lg-15 px-lg-15 text-gray-700">
-								<h1>Get Districts by Province</h1>
+								<section class="mb-10">
+									<h2 class="mb-6">Get Districts by Province</h2>
 
 								<div>
 									<!--begin::Form-->
@@ -306,8 +308,9 @@
 												<!--end::Label-->
 
 												<!--begin::Select2-->
-												<select id="get_districts_by_province_select" class="form-select" name="select2_input"
-													data-control="select2" data-placeholder="Select Province">
+												<select id="get_districts_by_province_select" class="form-select"
+													name="select2_input" data-control="select2"
+													data-placeholder="Select Province">
 													<option id="select2_input"></option>
 
 												</select>
@@ -317,7 +320,7 @@
 
 											<!--begin::Actions-->
 											<button id="kt_docs_formvalidation_select2_submit" type="submit"
-												class="btn btn-sm btn-primary ms-10">
+												class="btn btn-primary ms-10">
 												<span class="indicator-label">
 													Get
 												</span>
@@ -344,9 +347,8 @@
 
 
 										<!--begin::Svg Icon | path: assets/media/icons/duotune/files/fil008.svg-->
-										<span class="svg-icon  svg-icon-1"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none">
+										<span class="svg-icon  svg-icon-1"><svg xmlns="http://www.w3.org/2000/svg"
+												width="24" height="24" viewBox="0 0 24 24" fill="none">
 												<path opacity="0.3"
 													d="M19 22H5C4.4 22 4 21.6 4 21V3C4 2.4 4.4 2 5 2H14L20 8V21C20 21.6 19.6 22 19 22ZM11.7 17.7L16 14C16.4 13.6 16.4 12.9 16 12.5C15.6 12.1 15.4 12.6 15 13L11 16L9 15C8.6 14.6 8.4 14.1 8 14.5C7.6 14.9 8.1 15.6 8.5 16L10.3 17.7C10.5 17.9 10.8 18 11 18C11.2 18 11.5 17.9 11.7 17.7Z"
 													fill="currentColor" />
@@ -368,6 +370,90 @@
 										class="btn btn-sm position-absolute top-0 end-0">copy</button> -->
 
 								</div>
+								</section>
+
+
+								<section class="mb-10">
+									<h2 class="mb-6">Get Municipalities/ Rural Municipalities by District</h2>
+
+								<div>
+									<!--begin::Form-->
+									<form id="get_municipalites_form" class="form" action="#"
+										autocomplete="off">
+
+										<div class="d-flex align-items-center justify-content-start">
+
+
+											<!--begin::Input group--->
+											<div class="fv-row">
+												<!--begin::Label-->
+												<label class="required form-label fs-6 mb-2">Select District</label>
+												<!--end::Label-->
+
+												<!--begin::Select2-->
+												<select id="get_municipalities_by_district_select" class="form-select"
+													name="district" data-control="select2"
+													data-placeholder="Select District">
+													<option id="options_district"></option>
+
+												</select>
+												<!--begin::Select2-->
+											</div>
+											<!--end::Input group--->
+
+											<!--begin::Actions-->
+											<button id="get_municipalites_form_submit" type="submit"
+												class="btn btn-primary ms-10">
+												<span class="indicator-label">
+													Get
+												</span>
+												<span class="indicator-progress">
+													Please wait... <span
+														class="spinner-border spinner-border-sm align-middle ms-2"></span>
+												</span>
+											</button>
+											<!--end::Actions-->
+										</div>
+
+
+
+
+									</form>
+									<!--end::Form-->
+								</div>
+
+								<div class="position-relative w-50 d-none" id="get_municipalites_result_container">
+									<pre class="bg-secondary p-4" id="get_municipalites_result" style="max-height: fit-content;"></pre>
+
+									<button onClick="copyData('get_municipalites_result')"
+										class="btn btn-sm  position-absolute top-0 end-0 btn-light rounded-0">
+
+
+										<!--begin::Svg Icon | path: assets/media/icons/duotune/files/fil008.svg-->
+										<span class="svg-icon  svg-icon-1"><svg xmlns="http://www.w3.org/2000/svg"
+												width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<path opacity="0.3"
+													d="M19 22H5C4.4 22 4 21.6 4 21V3C4 2.4 4.4 2 5 2H14L20 8V21C20 21.6 19.6 22 19 22ZM11.7 17.7L16 14C16.4 13.6 16.4 12.9 16 12.5C15.6 12.1 15.4 12.6 15 13L11 16L9 15C8.6 14.6 8.4 14.1 8 14.5C7.6 14.9 8.1 15.6 8.5 16L10.3 17.7C10.5 17.9 10.8 18 11 18C11.2 18 11.5 17.9 11.7 17.7Z"
+													fill="currentColor" />
+												<path
+													d="M10.4343 15.4343L9.25 14.25C8.83579 13.8358 8.16421 13.8358 7.75 14.25C7.33579 14.6642 7.33579 15.3358 7.75 15.75L10.2929 18.2929C10.6834 18.6834 11.3166 18.6834 11.7071 18.2929L16.25 13.75C16.6642 13.3358 16.6642 12.6642 16.25 12.25C15.8358 11.8358 15.1642 11.8358 14.75 12.25L11.5657 15.4343C11.2533 15.7467 10.7467 15.7467 10.4343 15.4343Z"
+													fill="currentColor" />
+												<path d="M15 8H20L14 2V7C14 7.6 14.4 8 15 8Z" fill="currentColor" />
+											</svg></span>
+										<!--end::Svg Icon-->
+
+										</span>
+
+
+										Copy
+									</button>
+
+
+									<!-- <button onClick="copyData('result')"
+										class="btn btn-sm position-absolute top-0 end-0">copy</button> -->
+
+								</div>
+								</section>
 
 							</div>
 							<!--end::Card Body-->
@@ -496,8 +582,8 @@
 			navigator.clipboard.writeText(data);
 
 			Swal.fire({
-				text:"Copied Successfully !",
-				icon:"success"
+				text: "Copied Successfully !",
+				icon: "success"
 			})
 		}
 	</script>
