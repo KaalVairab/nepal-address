@@ -38,7 +38,7 @@ getDistrictsByProvinceSubmit.addEventListener('click', function (e) {
                         console.log(rspnse)
 
                         let districts = JSON.stringify(rspnse.data)
-                        createResultContainer(getDistrictsByProvinceForm, districts)
+                        createResultContainer(getDistrictsByProvinceForm, districts,`Districts of ${getDistrictsByProvinceSelect.value}`)
                     })
             }
         })
@@ -88,7 +88,55 @@ getMunicipalitiesSubmit.addEventListener('click', function (e) {
                         console.log(rspnse)
 
                         let municipals = JSON.stringify(rspnse.data)
-                        createResultContainer(getMunicipalitiesForm, municipals)
+                        createResultContainer(getMunicipalitiesForm, municipals,`Municipals of ${getMunicipalitiesSelect.value}`)
+                    })
+            }
+        })
+    }
+})
+
+
+const getDistrictsProvincesForm = document.getElementById('get_districts_province')
+const getDistrictsProvincesSelect = document.getElementById('get_districts_province_select')
+const getDistrictsProvincesSubmit = document.getElementById('get_districts_province_submit')
+
+var validatorGetDistrictsProvinces = FormValidation.formValidation(
+    getDistrictsProvincesForm,
+    {
+        fields: {
+            'select': {
+                validators: {
+                    notEmpty: {
+                        message: 'required !'
+                    }
+                }
+            },
+        },
+
+        plugins: {
+            trigger: new FormValidation.plugins.Trigger(),
+            bootstrap: new FormValidation.plugins.Bootstrap5({
+                rowSelector: '.fv-row',
+                eleInvalidClass: '.border-danger',
+                eleValidClass: ''
+            })
+        }
+    }
+);
+
+
+getDistrictsProvincesSubmit.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (validatorGetDistrictsProvinces) {
+        validatorGetDistrictsProvinces.validate().then(function (status) {
+
+            if (status == "Valid") {
+                axios.get(`../../data/${getDistrictsProvincesSelect.value}.json`)
+                    .then(rspnse => {
+                        console.log(`${getDistrictsProvincesSelect.value}`)
+
+                        let data = JSON.stringify(rspnse.data)
+                        createResultContainer(getDistrictsProvincesForm, data, `All ${getDistrictsProvincesSelect.value}`)
                     })
             }
         })
@@ -97,15 +145,20 @@ getMunicipalitiesSubmit.addEventListener('click', function (e) {
 
 
 
-const createResultContainer = (form, data) => {
-    let container = snippet(data)
+
+
+
+const createResultContainer = (form, data,name) => {
+    console.log(name)
+    let container = snippet(data,name)
     form.insertAdjacentHTML("afterend", container);
 }
 
 
-const snippet = (data) => {
+const snippet = (data,name) => {
     return (
         `<div class="py-5">
+        <em class="mb-4 d-block">${name} :</em>
         <div class="highlight">
         <button class="highlight-copy btn" onClick="copy(this)" data-bs-toggle="tooltip" title="Copy code">copy</button>
         <div class="highlight-code">

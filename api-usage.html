@@ -73,13 +73,13 @@
                             </div>
                             <div class="menu-item">
                                 <a class="menu-link active py-2"
-                                    href="../../demo5/dist/documentation/getting-started.html">
+                                    href="/index.html">
                                     <span class="menu-title">Overview</span>
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a class="menu-link active py-2" href="./api-list.html">
-                                    <span class="menu-title">API</span>
+                                <a class="menu-link active py-2" href="./api-usage.html">
+                                    <span class="menu-title">API Usage</span>
                                 </a>
                             </div>
                             <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
@@ -178,7 +178,7 @@
                                             </li>
                                             <!--end::Item-->
                                             <!--begin::Item-->
-                                            <li class="breadcrumb-item text-dark">Overview</li>
+                                            <li class="breadcrumb-item text-dark">API Usage</li>
                                             <!--end::Item-->
                                         </ul>
                                         <!--end::Breadcrumb-->
@@ -298,8 +298,32 @@
                         <div class="card card-docs mb-2">
                             <!--begin::Card Body-->
                             <div class="card-body fs-6 py-15 px-10 py-lg-15 px-lg-15 text-gray-700">
-                                
-                                <section class="mb-10">
+
+                                <section class="mb-10" id="provinces">
+                                    <h2 class="mb-6">Get All Provinces</h2>
+
+                                    <div class="py-5">
+                                        <div class="highlight">
+                                            <button class="highlight-copy btn" onClick="copy(this)"
+                                                data-bs-toggle="tooltip" title="Copy code">copy</button>
+                                            <div class="highlight-code">
+                                                <pre class="language-html">
+                                                    <code class="language-html">
+                                                        https://kaalvairab.github.io/nepal-address/data/provinces.json
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </section>
+
+
+                                <section class="mb-10" id="districts">
                                     <h2 class="mb-6">Get All Districts</h2>
 
                                     <div class="py-5">
@@ -309,7 +333,7 @@
                                             <div class="highlight-code">
                                                 <pre class="language-html">
                                                     <code class="language-html">
-                                                        https://kaalvairab.github.io/districts.json
+                                                        https://kaalvairab.github.io/nepal-address/data/districts.json
                                                     </code>
                                                 </pre>
                                             </div>
@@ -318,11 +342,60 @@
 
 
 
-                                    
- 
+
+
                                 </section>
 
-                                
+                                <section class="mb-10" id="districts_by_province">
+                                    <h2 class="mb-6">Get Districts by Province</h2>
+                                    <em class="mb-1 px-6 d-block">Note *: [PROVINCE_NAME] should strictly match as of data from "Get all provinces mentioned above"</em>
+
+
+                                    <div class="py-5">
+                                        <div class="highlight">
+                                            <button class="highlight-copy btn" onClick="copy(this)"
+                                                data-bs-toggle="tooltip" title="Copy code">copy</button>
+                                            <div class="highlight-code">
+                                                <pre class="language-html">
+                                                    <code class="language-html">
+                                                        https://kaalvairab.github.io/nepal-address/data/districtsByProvince/[PROVINCE_NAME].json
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </section>
+                                <section class="mb-10" id="municipals_by_district">
+                                    <h2 class="mb-6">Get Municipals by District</h2>
+                                    <em class="mb-1 px-6 d-block">Note *: [DISTRICT_NAME] should strictly match as of data from "Get ALL Districts mentioned above"</em>
+
+
+                                    <div class="py-5">
+
+                                        <div class="highlight">
+                                            <button class="highlight-copy btn" onClick="copy(this)"
+                                                data-bs-toggle="tooltip" title="Copy code">copy</button>
+                                            <div class="highlight-code">
+                                                <pre class="language-html">
+                                                    <code class="language-html">
+                                                        https://kaalvairab.github.io/nepal-address/data/municipalsByDistrict/[DISTRICT_NAME].json
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </section>
+
 
                             </div>
                             <!--end::Card Body-->

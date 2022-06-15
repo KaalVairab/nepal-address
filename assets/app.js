@@ -4,10 +4,10 @@ import './forms.js'
 window.addEventListener('load', (event) => {
     // GET DISTRICTS BY PROVINCE
     let options = document.getElementById("select2_input")
-    axios.get('../../data/province.json')
+    axios.get('../../data/provinces.json')
         .then(rspnse => {
 
-            rspnse.data.data.map(data => {
+            rspnse.data.provinces.map(data => {
 
                 let opt = `<option value=${data}> ${data} </option>`
                 options.insertAdjacentHTML("afterend", opt);
@@ -20,7 +20,7 @@ window.addEventListener('load', (event) => {
 
     axios.get('../../data/districts.json')
         .then(rspnse => {
-            rspnse.data.data.map(data => {
+            rspnse.data.districts.map(data => {
 
                 let opt = `<option value=${data}> ${data} </option>`
                 optionsDistrict.insertAdjacentHTML("afterend", opt);
