@@ -157,17 +157,17 @@ const createResultContainer = (form, data,name) => {
 
 const snippet = (data,name) => {
     return (
-        `<div class="py-5">
-        <em class="mb-4 d-block">${name} :</em>
-        <div class="highlight">
-        <button class="highlight-copy btn" onClick="copy(this)" data-bs-toggle="tooltip" title="Copy code">copy</button>
-        <div class="highlight-code">
-        <pre class="language-html">
-        ${data}
-        </pre>
-        </div>
-        </div>
-        </div>`
+        // `<div class="py-5">
+        // <em class="mb-4 d-block">${name} :</em>
+        // <div class="highlight">
+        // <button class="highlight-copy btn" onClick="copy(this)" data-bs-toggle="tooltip" title="Copy code">copy</button>
+        // <div class="highlight-code">
+        // <pre class="language-html">
+        // ${data}
+        // </pre>
+        // </div>
+        // </div>
+        // </div>`
     )
 }
 
