@@ -356,8 +356,7 @@
 														</a>
 														<!--end::Item-->
 														<!--begin::Item-->
-														<a data-kt-searchable="true"
-															href="./api-usage.html#municipals_by_district"
+														<a data-kt-searchable="true" href="./api-usage.html#municipals_by_district"
 															class="d-flex flex-column text-dark text-hover-primary py-2">
 															<span class="fw-bolder fs-5 mb-0">Muncipals by
 																District</span>
@@ -366,8 +365,7 @@
 														</a>
 														<!--end::Item-->
 														<!--begin::Item-->
-														<a href="./api-usage.html#districts_by_province"
-															data-kt-searchable="true"
+														<a href="./api-usage.html#districts_by_province" data-kt-searchable="true"
 															class="d-flex flex-column text-dark text-hover-primary py-2">
 															<span class="fw-bolder fs-5 mb-0">Districts by
 																Province</span>
@@ -393,8 +391,7 @@
 														</a>
 														<!--end::Item-->
 														<!--begin::Item-->
-														<a data-kt-searchable="true"
-															href="./raw.html#municipals_by_district"
+														<a data-kt-searchable="true" href="./raw.html#municipals_by_district"
 															class="d-flex flex-column text-dark text-hover-primary py-2">
 															<span class="fw-bolder fs-5 mb-0">Muncipals by
 																District</span>
@@ -403,8 +400,7 @@
 														</a>
 														<!--end::Item-->
 														<!--begin::Item-->
-														<a href="./raw.html#districts_by_province"
-															data-kt-searchable="true"
+														<a href="./raw.html#districts_by_province" data-kt-searchable="true"
 															class="d-flex flex-column text-dark text-hover-primary py-2">
 															<span class="fw-bolder fs-5 mb-0">Districts by
 																Province</span>
@@ -413,7 +409,7 @@
 														</a>
 														<!--end::Item-->
 
-
+													
 													</div>
 													<!--end::Items-->
 												</div>
@@ -508,7 +504,7 @@
 										<!--end::Menu-->
 									</div>
 									<!--end::Search-->
-
+									
 
 								</div>
 								<!--end::Toolbar-->
@@ -528,199 +524,234 @@
 						<div class="card card-docs mb-2">
 							<!--begin::Card Body-->
 							<div class="card-body fs-6 py-15 px-10 py-lg-15 px-lg-15 text-gray-700">
-
-								<section class="mb-10" id="provinces_districts">
-									<h2 class="mb-6">Get all Provinces or Districts</h2>
-
-									<div>
-										<!--begin::Form-->
-										<form id="get_districts_province" class="form" action="#" autocomplete="off">
-
-											<div class="d-flex align-items-center justify-content-start">
-
-
-												<!--begin::Input group--->
-												<div class="fv-row w-md-250px">
-													<!--begin::Label-->
-													<label class="required form-label fs-6 mb-2">Select </label>
-													<!--end::Label-->
-
-													<!--begin::Select2-->
-													<select id="get_districts_province_select"
-														class="form-select text-capitalize" name="select"
-														data-control="select2" data-placeholder="Select">
-														<option></option>
-														<option value="districts">Districts</option>
-														<option value="provinces">Provinces</option>
-
-
-													</select>
-													<!--begin::Select2-->
-												</div>
-												<!--end::Input group--->
-
-												<!--begin::Actions-->
-												<button id="get_districts_province_submit" type="submit"
-													class="btn  btn-primary ms-10">
-													<span class="indicator-label">
-														Get
-													</span>
-													<span class="indicator-progress">
-														Please wait... <span
-															class="spinner-border spinner-border-sm align-middle ms-2"></span>
-													</span>
-												</button>
-												<!--end::Actions-->
-											</div>
-
-
-
-
-										</form>
-										<!--end::Form-->
-
-
-									</div>
-
-
-								</section>
-
-								<section class="mb-10" id="districts_by_province">
-									<h2 class="mb-6">Get Districts by Province</h2>
-
-									<div>
-										<!--begin::Form-->
-										<form id="get_districts_by_province" class="form" action="#" autocomplete="off">
-
-											<div class="d-flex align-items-center justify-content-start">
-
-
-												<!--begin::Input group--->
-												<div class="fv-row ">
-													<!--begin::Label-->
-													<label class="required form-label fs-6 mb-2">Select Province</label>
-													<!--end::Label-->
-
-													<!--begin::Select2-->
-													<select id="get_districts_by_province_select"
-														class="form-select text-capitalize" name="province"
-														data-control="select2" data-placeholder="Select Province">
-														<option id="select2_input"></option>
-
-													</select>
-													<!--begin::Select2-->
-												</div>
-												<!--end::Input group--->
-
-												<!--begin::Actions-->
-												<button id="get_districts_by_province_submit" type="submit"
-													class="btn btn-primary ms-10">
-													<span class="indicator-label">
-														Get
-													</span>
-													<span class="indicator-progress">
-														Please wait... <span
-															class="spinner-border spinner-border-sm align-middle ms-2"></span>
-													</span>
-												</button>
-												<!--end::Actions-->
-											</div>
-
-
-
-
-										</form>
-										<!--end::Form-->
-
-
-									</div>
-
-
-								</section>
-
-
-								<section class="mb-10" id="municipals_by_district">
-									<h2 class="mb-6">Get Municipalities/ Rural Municipalities by District</h2>
-
-									<div>
-										<!--begin::Form-->
-										<form id="get_municipalites_form" class="form" action="#" autocomplete="off">
-
-											<div class="d-flex align-items-center justify-content-start">
-
-
-												<!--begin::Input group--->
-												<div class="fv-row">
-													<!--begin::Label-->
-													<label class="required form-label fs-6 mb-2">Select District</label>
-													<!--end::Label-->
-
-													<!--begin::Select2-->
-													<select id="get_municipalities_by_district_select"
-														class="form-select" name="district" data-control="select2"
-														data-placeholder="Select District">
-														<option id="options_district"></option>
-
-													</select>
-													<!--begin::Select2-->
-												</div>
-												<!--end::Input group--->
-
-												<!--begin::Actions-->
-												<button id="get_municipalites_form_submit" type="submit"
-													class="btn btn-primary ms-10">
-													<span class="indicator-label">
-														Get
-													</span>
-													<span class="indicator-progress">
-														Please wait... <span
-															class="spinner-border spinner-border-sm align-middle ms-2"></span>
-													</span>
-												</button>
-												<!--end::Actions-->
-											</div>
-
-
-
-
-										</form>
-										<!--end::Form-->
-									</div>
-
-									<div class="position-relative w-50 d-none" id="get_municipalites_result_container">
-										<pre class="bg-secondary p-4" id="get_municipalites_result"
-											style="max-height: fit-content;"></pre>
-
-										<button onClick="copyData('get_municipalites_result')"
-											class="btn btn-sm  position-absolute top-0 end-0 btn-light rounded-0">
-
-
-											<!--begin::Svg Icon | path: assets/media/icons/duotune/files/fil008.svg-->
-											<span class="svg-icon  svg-icon-1"><svg xmlns="http://www.w3.org/2000/svg"
-													width="24" height="24" viewBox="0 0 24 24" fill="none">
-													<path opacity="0.3"
-														d="M19 22H5C4.4 22 4 21.6 4 21V3C4 2.4 4.4 2 5 2H14L20 8V21C20 21.6 19.6 22 19 22ZM11.7 17.7L16 14C16.4 13.6 16.4 12.9 16 12.5C15.6 12.1 15.4 12.6 15 13L11 16L9 15C8.6 14.6 8.4 14.1 8 14.5C7.6 14.9 8.1 15.6 8.5 16L10.3 17.7C10.5 17.9 10.8 18 11 18C11.2 18 11.5 17.9 11.7 17.7Z"
-														fill="currentColor" />
-													<path
-														d="M10.4343 15.4343L9.25 14.25C8.83579 13.8358 8.16421 13.8358 7.75 14.25C7.33579 14.6642 7.33579 15.3358 7.75 15.75L10.2929 18.2929C10.6834 18.6834 11.3166 18.6834 11.7071 18.2929L16.25 13.75C16.6642 13.3358 16.6642 12.6642 16.25 12.25C15.8358 11.8358 15.1642 11.8358 14.75 12.25L11.5657 15.4343C11.2533 15.7467 10.7467 15.7467 10.4343 15.4343Z"
-														fill="currentColor" />
-													<path d="M15 8H20L14 2V7C14 7.6 14.4 8 15 8Z" fill="currentColor" />
-												</svg></span>
-											<!--end::Svg Icon-->
-
+								<!--begin::Section-->
+								<div class="px-md-10 pt-md-10 pb-md-5">
+									<!--begin::Block-->
+									<div class="text-center mb-20">
+										<h1 class="fs-2tx fw-bolder mb-8">Rapidly Get Address Data With
+											<span class="d-inline-block position-relative ms-2">
+												<span class="d-inline-block mb-2">Nepal Address</span>
+												<span
+													class="d-inline-block position-absolute h-8px bottom-0 end-0 start-0 bg-success translate rounded"></span>
 											</span>
-
-
-											Copy
-										</button>
-
-
-										<!-- <button onClick="copyData('result')"
-										class="btn btn-sm position-absolute top-0 end-0">copy</button> -->
+										</h1>
+										<div class="fw-bold fs-2 text-gray-500 mb-10">The latest
+											<span class="fw-bolder text-gray-900">Provincial</span>&#160;address details
+											with
+											<br />provinces, districts & Municipalities / Rural Municipalities<br />
+											<span class="fw-bolder text-gray-900">in Raw data format or API
+												Usage</span>&#160;
+										</div>
+									</div>
+									<!--end::Block-->
+									<!--begin::Row-->
+									<div class="row g-0">
+										<!--begin::Col-->
+										<div class="col-md-6 mb-10">
+											<div class="bg-light bg-opacity-50 rounded-3 p-10 mx-md-5 h-md-100">
+												<div
+													class="d-flex flex-center w-60px h-60px rounded-3 bg-light-info bg-opacity-90 mb-10">
+													<!--begin::Svg Icon | path: icons/duotune/coding/cod001.svg-->
+													<span class="svg-icon svg-icon-info svg-icon-3x">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none">
+															<path opacity="0.3"
+																d="M22.1 11.5V12.6C22.1 13.2 21.7 13.6 21.2 13.7L19.9 13.9C19.7 14.7 19.4 15.5 18.9 16.2L19.7 17.2999C20 17.6999 20 18.3999 19.6 18.7999L18.8 19.6C18.4 20 17.8 20 17.3 19.7L16.2 18.9C15.5 19.3 14.7 19.7 13.9 19.9L13.7 21.2C13.6 21.7 13.1 22.1 12.6 22.1H11.5C10.9 22.1 10.5 21.7 10.4 21.2L10.2 19.9C9.4 19.7 8.6 19.4 7.9 18.9L6.8 19.7C6.4 20 5.7 20 5.3 19.6L4.5 18.7999C4.1 18.3999 4.1 17.7999 4.4 17.2999L5.2 16.2C4.8 15.5 4.4 14.7 4.2 13.9L2.9 13.7C2.4 13.6 2 13.1 2 12.6V11.5C2 10.9 2.4 10.5 2.9 10.4L4.2 10.2C4.4 9.39995 4.7 8.60002 5.2 7.90002L4.4 6.79993C4.1 6.39993 4.1 5.69993 4.5 5.29993L5.3 4.5C5.7 4.1 6.3 4.10002 6.8 4.40002L7.9 5.19995C8.6 4.79995 9.4 4.39995 10.2 4.19995L10.4 2.90002C10.5 2.40002 11 2 11.5 2H12.6C13.2 2 13.6 2.40002 13.7 2.90002L13.9 4.19995C14.7 4.39995 15.5 4.69995 16.2 5.19995L17.3 4.40002C17.7 4.10002 18.4 4.1 18.8 4.5L19.6 5.29993C20 5.69993 20 6.29993 19.7 6.79993L18.9 7.90002C19.3 8.60002 19.7 9.39995 19.9 10.2L21.2 10.4C21.7 10.5 22.1 11 22.1 11.5ZM12.1 8.59998C10.2 8.59998 8.6 10.2 8.6 12.1C8.6 14 10.2 15.6 12.1 15.6C14 15.6 15.6 14 15.6 12.1C15.6 10.2 14 8.59998 12.1 8.59998Z"
+																fill="black" />
+															<path
+																d="M17.1 12.1C17.1 14.9 14.9 17.1 12.1 17.1C9.30001 17.1 7.10001 14.9 7.10001 12.1C7.10001 9.29998 9.30001 7.09998 12.1 7.09998C14.9 7.09998 17.1 9.29998 17.1 12.1ZM12.1 10.1C11 10.1 10.1 11 10.1 12.1C10.1 13.2 11 14.1 12.1 14.1C13.2 14.1 14.1 13.2 14.1 12.1C14.1 11 13.2 10.1 12.1 10.1Z"
+																fill="black" />
+														</svg>
+													</span>
+													<!--end::Svg Icon-->
+												</div>
+												<h1 class="mb-5">Zero Configuration</h1>
+												<div class="fs-4 text-gray-600 py-3">To use nepal-address , you need
+													zero configuration. It can be used right away given at API Usage.
+												</div>
+												<a href="api-usage.html"
+													class="btn btn-lg btn-flex btn-link btn-color-info">API Usage
+													<!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
+													<span class="svg-icon ms-2 svg-icon-3">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none">
+															<rect opacity="0.5" x="18" y="13" width="13" height="2"
+																rx="1" transform="rotate(-180 18 13)" fill="black" />
+															<path
+																d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z"
+																fill="black" />
+														</svg>
+													</span>
+													<!--end::Svg Icon-->
+												</a>
+											</div>
+										</div>
+										<!--end::Col-->
+										<!--begin::Col-->
+										<div class="col-md-6 mb-10">
+											<div class="bg-light bg-opacity-50 rounded-3 p-10 mx-md-5 h-md-100">
+												<div
+													class="d-flex flex-center w-60px h-60px rounded-3 bg-light-success bg-opacity-90 mb-10">
+													<!--begin::Svg Icon | path: icons/duotune/art/art006.svg-->
+													<span class="svg-icon svg-icon-success svg-icon-3x">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none">
+															<path opacity="0.3"
+																d="M22 19V17C22 16.4 21.6 16 21 16H8V3C8 2.4 7.6 2 7 2H5C4.4 2 4 2.4 4 3V19C4 19.6 4.4 20 5 20H21C21.6 20 22 19.6 22 19Z"
+																fill="black" />
+															<path
+																d="M20 5V21C20 21.6 19.6 22 19 22H17C16.4 22 16 21.6 16 21V8H8V4H19C19.6 4 20 4.4 20 5ZM3 8H4V4H3C2.4 4 2 4.4 2 5V7C2 7.6 2.4 8 3 8Z"
+																fill="black" />
+														</svg>
+													</span>
+													<!--end::Svg Icon-->
+												</div>
+												<h1 class="mb-5">Raw Data</h1>
+												<div class="fs-4 text-gray-600 py-3">Raw data can be fetched accordingly
+													for provinces & districts from Raw Data Page.</div>
+												<a href="raw.html"
+													class="btn btn-lg btn-flex btn-link btn-color-success">Get Raw Data
+													<!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
+													<span class="svg-icon ms-2 svg-icon-3">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none">
+															<rect opacity="0.5" x="18" y="13" width="13" height="2"
+																rx="1" transform="rotate(-180 18 13)" fill="black" />
+															<path
+																d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z"
+																fill="black" />
+														</svg>
+													</span>
+													<!--end::Svg Icon-->
+												</a>
+											</div>
+										</div>
+										<!--end::Col-->
+										<!--begin::Col-->
+										<div class="col-md-6 mb-10">
+											<div class="bg-light bg-opacity-50 rounded-3 p-10 mx-md-5 h-md-100">
+												<div
+													class="d-flex flex-center w-60px h-60px rounded-3 bg-light-danger bg-opacity-90 mb-10">
+													<!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
+													<span class="svg-icon svg-icon-danger svg-icon-3x">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none">
+															<path opacity="0.3"
+																d="M21.25 18.525L13.05 21.825C12.35 22.125 11.65 22.125 10.95 21.825L2.75 18.525C1.75 18.125 1.75 16.725 2.75 16.325L4.04999 15.825L10.25 18.325C10.85 18.525 11.45 18.625 12.05 18.625C12.65 18.625 13.25 18.525 13.85 18.325L20.05 15.825L21.35 16.325C22.35 16.725 22.35 18.125 21.25 18.525ZM13.05 16.425L21.25 13.125C22.25 12.725 22.25 11.325 21.25 10.925L13.05 7.62502C12.35 7.32502 11.65 7.32502 10.95 7.62502L2.75 10.925C1.75 11.325 1.75 12.725 2.75 13.125L10.95 16.425C11.65 16.725 12.45 16.725 13.05 16.425Z"
+																fill="black" />
+															<path
+																d="M11.05 11.025L2.84998 7.725C1.84998 7.325 1.84998 5.925 2.84998 5.525L11.05 2.225C11.75 1.925 12.45 1.925 13.15 2.225L21.35 5.525C22.35 5.925 22.35 7.325 21.35 7.725L13.05 11.025C12.45 11.325 11.65 11.325 11.05 11.025Z"
+																fill="black" />
+														</svg>
+													</span>
+													<!--end::Svg Icon-->
+												</div>
+												<h1 class="mb-5">Filtered Data</h1>
+												<div class="fs-4 text-gray-600 py-3">Filtered data can be fetched at raw
+													data page according to need from raw data page</div>
+												<a href="raw.html"
+													class="btn btn-lg btn-flex btn-link btn-color-danger">Learn more
+													<!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
+													<span class="svg-icon ms-2 svg-icon-3">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none">
+															<rect opacity="0.5" x="18" y="13" width="13" height="2"
+																rx="1" transform="rotate(-180 18 13)" fill="black" />
+															<path
+																d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z"
+																fill="black" />
+														</svg>
+													</span>
+													<!--end::Svg Icon-->
+												</a>
+											</div>
+										</div>
+										<!--end::Col-->
+										<!--begin::Col-->
+										<div class="col-md-6 mb-10">
+											<div class="bg-light bg-opacity-50 rounded-3 p-10 mx-md-5 h-md-100">
+												<div
+													class="d-flex flex-center w-60px h-60px rounded-3 bg-light-warning bg-opacity-90 mb-10">
+													<!--begin::Svg Icon | path: icons/duotune/abstract/abs026.svg-->
+													<span class="svg-icon svg-icon-warning svg-icon-3x">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none">
+															<path opacity="0.3"
+																d="M7 20.5L2 17.6V11.8L7 8.90002L12 11.8V17.6L7 20.5ZM21 20.8V18.5L19 17.3L17 18.5V20.8L19 22L21 20.8Z"
+																fill="black" />
+															<path d="M22 14.1V6L15 2L8 6V14.1L15 18.2L22 14.1Z"
+																fill="black" />
+														</svg>
+													</span>
+													<!--end::Svg Icon-->
+												</div>
+												<h1 class="mb-5">24/7 availability</h1>
+												<div class="fs-4 text-gray-600 py-3">All the data and services are
+													served via git servers available 24/7 * 365 days.</div>
+												<a href="../../demo14/dist/documentation/general/stepper.html"
+													class="btn btn-lg btn-flex btn-link btn-color-warning">Browse
+													components
+													<!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
+													<span class="svg-icon ms-2 svg-icon-3">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none">
+															<rect opacity="0.5" x="18" y="13" width="13" height="2"
+																rx="1" transform="rotate(-180 18 13)" fill="black" />
+															<path
+																d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z"
+																fill="black" />
+														</svg>
+													</span>
+													<!--end::Svg Icon-->
+												</a>
+											</div>
+										</div>
+										<!--end::Col-->
+										<!--begin::Col-->
+										<div class="col-md-6 mb-10">
+											<div class="bg-light bg-opacity-50 rounded-3 p-10 mx-md-5 h-md-100">
+												<div
+													class="d-flex flex-center w-60px h-60px rounded-3 bg-light-primary bg-opacity-90 mb-10">
+													<!--begin::Svg Icon | path: icons/duotune/abstract/abs026.svg-->
+													<span class="svg-icon svg-icon-primary svg-icon-3x">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none">
+															<path opacity="0.3"
+																d="M7 20.5L2 17.6V11.8L7 8.90002L12 11.8V17.6L7 20.5ZM21 20.8V18.5L19 17.3L17 18.5V20.8L19 22L21 20.8Z"
+																fill="black" />
+															<path d="M22 14.1V6L15 2L8 6V14.1L15 18.2L22 14.1Z"
+																fill="black" />
+														</svg>
+													</span>
+													<!--end::Svg Icon-->
+												</div>
+												<h1 class="mb-5">Legit Data</h1>
+												<div class="fs-4 text-gray-600 py-3">All the datas provided are from
+													Directory for Nepal Government Organizations, Nepal GOV.</div>
+												<a href="https://www.nepalgov.com/list-of-municipalities-and-rural-municipalities-english/"
+													target="_blank"
+													class="btn btn-lg btn-flex btn-link btn-color-primary">Nepal GOV
+													<!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
+													<span class="svg-icon ms-2 svg-icon-3">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none">
+															<rect opacity="0.5" x="18" y="13" width="13" height="2"
+																rx="1" transform="rotate(-180 18 13)" fill="black" />
+															<path
+																d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z"
+																fill="black" />
+														</svg>
+													</span>
+													<!--end::Svg Icon-->
+												</a>
+											</div>
+										</div>
+										<!--end::Col-->
 
 									</div>
-								</section>
-
+									<!--end::Row-->
+								</div>
+								<!--end::Section-->
 							</div>
 							<!--end::Card Body-->
 						</div>
@@ -755,9 +786,9 @@
 							<!--begin::Menu item-->
 							<li class="menu-item">
 								<!--begin::Menu link-->
-								<a href="https://github.com/KaalVairab/nepal-address" target="_blank"
-									class="menu-link px-3">
-									<img alt="github" src="assets/media/svg/social-logos/github.svg" class="h-20px" />
+								<a href="https://github.com/KaalVairab/nepal-address" target="_blank" class="menu-link px-3">
+									<img alt="github" src="assets/media/svg/social-logos/github.svg"
+										class="h-20px" />
 								</a>
 								<!--end::Menu link-->
 							</li>
@@ -766,7 +797,8 @@
 							<li class="menu-item">
 								<!--begin::Menu link-->
 								<a href="#!" target="_blank" class="menu-link px-3">
-									<img alt="Twitter" src="assets/media/svg/social-logos/twitter.svg" class="h-20px" />
+									<img alt="Twitter" src="assets/media/svg/social-logos/twitter.svg"
+										class="h-20px" />
 								</a>
 								<!--end::Menu link-->
 							</li>
@@ -816,19 +848,6 @@
 	<script src="assets/js/custom/documentation/search.js"></script>
 	<!--end::Page Custom Javascript-->
 	<!--end::Javascript-->
-
-	<script>
-		const copy = (e) => {
-
-			let data = e.nextElementSibling.children[0].innerText
-
-			navigator.clipboard.writeText(data);
-			e.innerText = "copied"
-
-		}
-	</script>
-
-	<script type="module" src="assets/app.js"></script>
 
 </body>
 <!--end::Body-->
