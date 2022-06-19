@@ -4,7 +4,7 @@ import './forms.js'
 window.addEventListener('load', (event) => {
     // GET DISTRICTS BY PROVINCE
     let options = document.getElementById("select2_input")
-    axios.get('../../data/provinces.json')
+    axios.get('../data/provinces.json')
         .then(rspnse => {
 
             rspnse.data.provinces.map(data => {
@@ -18,7 +18,7 @@ window.addEventListener('load', (event) => {
 
     let optionsDistrict = document.getElementById('options_district')
 
-    axios.get('../../data/districts.json')
+    axios.get('../data/districts.json')
         .then(rspnse => {
             rspnse.data.districts.map(data => {
 
@@ -28,15 +28,3 @@ window.addEventListener('load', (event) => {
         })
 });
 
-
-
-// 
-function copyData(id) {
-
-
-
-    console.log(id)
-    let data = document.getElementById(id).innerText
-
-    console.log(data)
-}
