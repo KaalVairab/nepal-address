@@ -83,7 +83,7 @@ getMunicipalitiesSubmit.addEventListener('click', function (e) {
 
             if (status == "Valid") {
 
-                axios.get(`../data/municipalsByDistrict/${getMunicipalitiesSelect.value}.json`)
+                axios.get(`data/municipalsByDistrict/${getMunicipalitiesSelect.value}.json`)
                     .then(rspnse => {
                         console.log(rspnse)
 
@@ -131,7 +131,7 @@ getDistrictsProvincesSubmit.addEventListener('click', function (e) {
         validatorGetDistrictsProvinces.validate().then(function (status) {
 
             if (status == "Valid") {
-                axios.get(`../data/${getDistrictsProvincesSelect.value}.json`)
+                axios.get(`data/${getDistrictsProvincesSelect.value}.json`)
                     .then(rspnse => {
                         console.log(`${getDistrictsProvincesSelect.value}`)
 

@@ -18,7 +18,7 @@ window.addEventListener('load', (event) => {
 
     let optionsDistrict = document.getElementById('options_district')
 
-    axios.get('../data/districts.json')
+    axios.get('data/districts.json')
         .then(rspnse => {
             rspnse.data.districts.map(data => {
 
