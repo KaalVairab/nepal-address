@@ -33,7 +33,7 @@ getDistrictsByProvinceSubmit.addEventListener('click', function (e) {
         validatorGetDistricts.validate().then(function (status) {
 
             if (status == "Valid") {
-                axios.get(`../data/districtsByProvince/${getDistrictsByProvinceSelect.value}.json`)
+                axios.get(`data/districtsByProvince/${getDistrictsByProvinceSelect.value}.json`)
                     .then(rspnse => {
                         console.log(rspnse)
 
