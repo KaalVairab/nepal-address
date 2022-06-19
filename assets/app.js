@@ -4,7 +4,7 @@ import './forms.js'
 window.addEventListener('load', (event) => {
     // GET DISTRICTS BY PROVINCE
     let options = document.getElementById("select2_input")
-    axios.get('../data/provinces.json')
+    axios.get('data/provinces.json')
         .then(rspnse => {
 
             rspnse.data.provinces.map(data => {
